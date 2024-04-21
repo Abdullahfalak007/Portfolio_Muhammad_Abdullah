@@ -2,82 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-/* Slide in from left */
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Slide in from right */
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Slide in from top */
-@keyframes slideInTop {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Slide in from bottom */
-@keyframes slideInBottom {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Common animation properties */
-.animated {
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-duration: 0.8s;
-}
-
-.visible {
-  opacity: 1;
-  animation-name: slideInRight; /* Default animation */
-}
-
-.visible.slideInLeft {
-  animation-name: slideInLeft;
-}
-
-.visible.slideInRight {
-  animation-name: slideInRight;
-}
-
-.visible.slideInTop {
-  animation-name: slideInTop;
-}
-
-.visible.slideInBottom {
-  animation-name: slideInBottom;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -108,7 +32,7 @@ a,
 nav,
 .nav-links {
   display: flex;
-  background-color: #bebfc2;
+  background-color: #124e66;
 }
 
 nav {
@@ -130,7 +54,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #90aead;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -142,6 +66,11 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+}
+
+.article-container ul li {
+  list-style-type: none;
+  margin: 1vh 0px;
 }
 
 /* HAMBURGER MENU */
@@ -446,7 +375,7 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 
 .color-container {
